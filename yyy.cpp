@@ -12,7 +12,11 @@ struct Vec2f
     //  значения полей и не вызывает другие не-const методы.
     float getLength() const
     {
+
         const float lengthSquare = y * y + y * y;
+
+        const float lengthSquare = x * x + y * y;
+
         return std::sqrt(lengthSquare);
     }
 };
